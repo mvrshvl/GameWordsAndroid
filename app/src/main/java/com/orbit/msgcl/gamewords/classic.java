@@ -1,15 +1,11 @@
-package com.orbit.msgcl.gamewords;
+﻿package com.orbit.msgcl.gamewords;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -84,14 +80,12 @@ import static com.orbit.msgcl.gamewords.slovar.letterC9;
 
 public class classic extends level {
 
-    String testInput , testOutput;
     private TextView mTimer;
-    int LengthWords[] = new int[34];
     int Spaces[] = new int[34];//массивы для работы со словарями
     String inputWord="",outputWord="",message="",history=" ";//переменные для работы с проверкой
     int LengthInputWord;
     String FirstSymbolInput,LastSymbolInput,LastSymbolOut;
-    boolean tim=false,hist=false,wordEmpty,FirLastSym=true,historyIn,slovarIn,historyOut,WasOrNotWasIn,HaveOrNotHave,WasOrNotWasOut;
+    boolean tim=false,wordEmpty,FirLastSym=true,slovarIn,WasOrNotWasIn,HaveOrNotHave,WasOrNotWasOut;
 int rej = PlaySolo.rejim;
     String copyWords1 = letter1, copyWords2 = letter2, copyWords3 = letter3, copyWords4 = letter4, copyWords5 = letter5, copyWords6 = letter6, copyWords7 = letter7, copyWords8 = letter8, copyWords9 = letter9, copyWords10 = letter10, copyWords11 = letter11, copyWords12 = letter12, copyWords13 = letter13, copyWords14 = letter14, copyWords15 = letter15, copyWords16 = letter16, copyWords17 = letter17, copyWords18 = letter18, copyWords19 = letter19, copyWords20 = letter20, copyWords21 = letter21, copyWords22 = letter22, copyWords23 = letter23, copyWords24 = letter24, copyWords25 = letter25, copyWords26 = letter26, copyWords27 = letter27, copyWords28 = letter28, copyWords29 = letter29, copyWords30 = letter30;
 
@@ -225,7 +219,6 @@ private int pointForlvl;
     }
     //проверка входящаего слова на повторение, существование , взятие последней буквы для ответа компьютера, проверка на первую букву
     public void PrepareInputWord() {
-        testInput = "";
         inputWord = "";
 
         EditText et = (EditText) findViewById(InputWordXML);
@@ -315,181 +308,181 @@ private int pointForlvl;
         {
             case 0:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords1, bool);
+                CheckSlovar(word, copyWords1);
                 else
                     chooseLetter(Spaces[1], copyWords1);
                 break;
             case 1:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords2, bool);
+                    CheckSlovar(word, copyWords2);
                 else
                     chooseLetter(Spaces[2], copyWords2);
                 break;
             case 2:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords3, bool);
+                    CheckSlovar(word, copyWords3);
                 else
                     chooseLetter(Spaces[3], copyWords3);
                 break;
             case 3:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords4, bool);
+                    CheckSlovar(word, copyWords4);
                 else
                     chooseLetter(Spaces[4], copyWords4);
                 break;
             case 4:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords5, bool);
+                    CheckSlovar(word, copyWords5);
                 else
                     chooseLetter(Spaces[5], copyWords5);
                 break;
             case 5:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords6, bool);
+                    CheckSlovar(word, copyWords6);
                 else
                     chooseLetter(Spaces[6], copyWords6);
                 break;
             case 6:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords30, bool);
+                    CheckSlovar(word, copyWords30);
                 else
                     chooseLetter(Spaces[30], copyWords30);
                 break;
             case 7:
                 if(InOrOut==1)
-                    CheckSlovar(word, copyWords7, bool);
+                    CheckSlovar(word, copyWords7);
                 else
                     chooseLetter(Spaces[7], copyWords7);
                 break;
             case 8:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords8, bool);
+                CheckSlovar(word, copyWords8);
                 else
                 chooseLetter(Spaces[8], copyWords8);
                 break;
             case 9:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords9, bool);
+                CheckSlovar(word, copyWords9);
                 else
                     chooseLetter(Spaces[9], copyWords9);
                 break;
             case 10:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords11, bool);
+                CheckSlovar(word, copyWords11);
                 else
                     chooseLetter(Spaces[11], copyWords11);
                 break;
             case 11:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords12, bool);
+                CheckSlovar(word, copyWords12);
                 else
                     chooseLetter(Spaces[12], copyWords12);
                 break;
             case 12:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords13, bool);
+                CheckSlovar(word, copyWords13);
                 else
                     chooseLetter(Spaces[13], copyWords13);
                 break;
             case 13:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords14, bool);
+                CheckSlovar(word, copyWords14);
                 else
                     chooseLetter(Spaces[14], copyWords14);
                 break;
             case 14:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords15, bool);
+                CheckSlovar(word, copyWords15);
                 else
                     chooseLetter(Spaces[15], copyWords15);
                 break;
             case 15:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords16, bool);
+                CheckSlovar(word, copyWords16);
                 else
                     chooseLetter(Spaces[16], copyWords16);
                 break;
             case 16:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords17, bool);
+                CheckSlovar(word, copyWords17);
                 else
                     chooseLetter(Spaces[17], copyWords17);
                 break;
             case 17:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords18, bool);
+                CheckSlovar(word, copyWords18);
                 else
                     chooseLetter(Spaces[18], copyWords18);
                 break;
             case 18:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords19, bool);
+                CheckSlovar(word, copyWords19);
                 else
                     chooseLetter(Spaces[19], copyWords19);
                 break;
             case 19:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords20, bool);
+                CheckSlovar(word, copyWords20);
                 else
                     chooseLetter(Spaces[20], copyWords20);
                 break;
             case 20:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords21, bool);
+                CheckSlovar(word, copyWords21);
                 else
                     chooseLetter(Spaces[21], copyWords21);
                 break;
             case 21:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords24, bool);
+                CheckSlovar(word, copyWords24);
                 else
                     chooseLetter(Spaces[24], copyWords24);
                 break;
             case 22:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords27, bool);
+                CheckSlovar(word, copyWords27);
                 else
                     chooseLetter(Spaces[27], copyWords27);
                 break;
             case 23:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords28, bool);
+                CheckSlovar(word, copyWords28);
                 else
                     chooseLetter(Spaces[28], copyWords28);
                 break;
             case 24:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords29, bool);
+                CheckSlovar(word, copyWords29);
                 else
                     chooseLetter(Spaces[29], copyWords29);
                 break;
             case 25:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords22, bool);
+                CheckSlovar(word, copyWords22);
                 else
                     chooseLetter(Spaces[22], copyWords22);
                 break;
             case 26:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords23, bool);
+                CheckSlovar(word, copyWords23);
                 else
                     chooseLetter(Spaces[23], copyWords23);
                 break;
             case 27:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords26, bool);
+                CheckSlovar(word, copyWords26);
                 else
                     chooseLetter(Spaces[26], copyWords26);
                 break;
             case 28:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords25, bool);
+                CheckSlovar(word, copyWords25);
                 else
                     chooseLetter(Spaces[25], copyWords25);
                 break;
             case 29:
                 if(InOrOut==1)
-                CheckSlovar(word, copyWords10, bool);
+                CheckSlovar(word, copyWords10);
                 else
                     chooseLetter(Spaces[10], copyWords10);
                 break;
@@ -507,11 +500,9 @@ private int pointForlvl;
         }
     }
 
-    //подготовка ответного слова по последней букве пользователя, проверка на повтор, взятие последней буквы
-    void CheckOut(String word,String slovar){
+    //проверка на повтор
+    void CheckStory(String word, String slovar,int who){//слово, история, от кого проверка
         boolean flag = false;
-
-        String checker="";
         int position=0;
         if(slovar!="") {
             while (flag != true) {
@@ -520,57 +511,36 @@ private int pointForlvl;
                 if (i != -1) {
                     if((slovar.charAt(i-1)==' ')&&(slovar.charAt(i+word.length())==' ') )     {
                         flag=true;
+                        if(who==0)//0 - выходящее слово
                         WasOrNotWasOut=false;
+                        else//исходящее
+                            WasOrNotWasIn=false;
                     }
                     else{
                         position=i+word.length();
                         flag=false;
+                        if(who==0)
                         WasOrNotWasOut=true;
+                        else
+                            WasOrNotWasIn=true;
                     }
 
                 } else {flag=true;
+                    if(who==0)
                     WasOrNotWasOut=true;
+                    else WasOrNotWasIn=true;
                 }
             }
         }
         else{
+            if(who==0)
             WasOrNotWasOut=true;
+            else WasOrNotWasIn=true;
         }
     }
-    //проверка слова на повторение в данной сессии
-    void CheckIn(String word,String slovar){
+
+    void CheckSlovar(String word,String slovar){
         boolean flag = false;
-
-        String checker="";
-        int position=0;
-        if(slovar!="") {
-            while (flag != true) {
-                int i = slovar.indexOf(word, position);
-
-                if (i != -1) {
-                    if((slovar.charAt(i-1)==' ')&&(slovar.charAt(i+word.length())==' ') )     {
-                        flag=true;
-                        WasOrNotWasIn=false;
-                    }
-                    else{
-                        position=i+word.length();
-                        flag=false;
-                        WasOrNotWasIn=true;
-                    }
-
-                } else {flag=true;
-                    WasOrNotWasIn=true;
-                }
-            }
-
-        }
-        else{
-            WasOrNotWasIn=true;
-        }
-    }
-    void CheckSlovar(String word,String slovar,boolean flag){
-        flag = false;
-        String checker="";
         int position=0;
         if(slovar!="") {
             while (flag != true) {
@@ -654,18 +624,19 @@ private int pointForlvl;
         PrepareInputWord();
         if(wordEmpty!=true){
             Check(inputWord,slovarIn,1);
-            CheckIn(inputWord,history);
+            WasOrNotWasIn=false;
+            CheckStory(inputWord,history,1);
             if((HaveOrNotHave==true)&&(WasOrNotWasIn==true)&&(FirLastSym==true)) {
-                if(friends==0) {
+                if(friends==0) {//если режим игры с другом то выходящее слово компьютера генерировать не надо
                     WasOrNotWasOut = false;
                     while (WasOrNotWasOut != true) {
                        // PrepareOutputWord();
                         Check(inputWord,slovarIn,0);
-                        CheckOut(outputWord, history);
+                        CheckStory(outputWord, history,0);
                     }
                     history = history + outputWord + " ";
                     history = history + inputWord + " ";
-                    hist = true;
+                  //  hist = true;
                     str = "";
                     lvlStart++;
                     if (lvlStart != lvl) {
@@ -697,7 +668,6 @@ private int pointForlvl;
                     message = "тебе на " + LastSymbolOut;
                     OutputMes(message);
                     history = history + inputWord + " ";
-                    hist=true;
                     str="";
                     lvlStart++;
                     if (lvlStart != lvl) {
@@ -737,7 +707,7 @@ private int pointForlvl;
     }
 
 
-    //функции создающие виртуальную статичную клавиатуру на активности6
+    //функции создающие виртуальную клавиатуру на активности
     void yo(View view){
         str=str+"ё";
         TextView add = (TextView) findViewById(InputWordXML);
