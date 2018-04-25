@@ -22,7 +22,6 @@
         <activity android:name=".Win"></activity>
         <activity android:name=".Lose"></activity>
         <activity android:name=".PlaySolo"></activity>
-        <activity android:name=".Settings"></activity>
         <activity android:name=".Friends"></activity>
 
 
