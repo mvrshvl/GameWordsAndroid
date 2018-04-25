@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"            android:id="@+id/points"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+
+        android:weightSum="1"
+        >
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/out"
+            android:onClick="classic"
+            android:text="Рейтинговый режим" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/out"
+            android:gravity="center"
+            android:onClick="standart"
+            android:text="Обычный режим" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/but3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@color/out"
+            android:gravity="center"
+            android:onClick="friends"
+            android:text="Игра с друзьями" />
+
+    </LinearLayout>
+</LinearLayout>
